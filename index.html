@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="José Miguel Dager Montoya">
         <meta name="miDATO" content="Contenido de mi DATO">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
         <header>
@@ -17,7 +18,11 @@
         </nav>
 
         <aside>
-            CONTENIDO LATERAL
+            <ul type="square">
+                <li>Menú 1</li>
+                <li>Menú 2</li>
+                <li>Menú 2</li>
+            </ul>
         </aside>
 
         <h1>TÍTULO H1</h1>
@@ -32,7 +37,7 @@
                 <div>
                     MI PRIMER CONTENDOR HTML
                     <p>
-                        MI PRIMER PÁRRAFO USANDO <b>HTML 5</b> MI PRIMER PÁRRAFO USANDO HTML 5 MI PRIMER PÁRRAFO USANDO HTML 5
+                        MI PRIMER <span>PÁRRAFO</span> USANDO <b>HTML 5</b> MI PRIMER PÁRRAFO USANDO HTML 5 MI PRIMER PÁRRAFO USANDO HTML 5
                         MI PRIMER PÁRRAFO USANDO HTML 5 MI PRIMER PÁRRAFO USANDO HTML 5 MI PRIMER PÁRRAFO USANDO HTML 5
                         MI PRIMER PÁRRAFO USANDO <strong>HTML 5</strong> MI PRIMER PÁRRAFO USANDO HTML 5
                     </p>
@@ -55,6 +60,72 @@
             <article>
                 <img src="media/img/logo.png" alt="Aquí una imagen" title="Información Imagen" height="200px" width="300px">
             </article>
+
+            <article>
+                <div>
+                    <table border="1">
+                        <caption>MI TABLA</caption>
+                        <thead>
+                            <tr>
+                                <th>NOMBRES</th>
+                                <th>APELLIDOS</th>
+                                <th>FECHA NACIMIENTO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>José</td>
+                                <td>Dager</td>
+                                <td>2010-05-11</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">Isabella</td>
+                                <td>Dager</td>
+                                <td>2010-05-11</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Dager</td>
+                                <td>XXX</td>
+                                <td>2010-05-11</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Raif</td>
+                                <td>2010-05-11</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Tabla 1. Datos Personales</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <!-- LISTAS ORDENADAS -->
+                <ol type="a" start="4">
+                    <li>Primer Item</li>
+                    <li>Segundo Item</li>
+                    <li>Tercer Item</li>
+                    <li>Cuarto Item</li>
+                </ol>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <!-- LISTAS DESORDENADA -->
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </article>
+            
         </section>
     </body>
 </html>

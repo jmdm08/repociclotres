@@ -13,9 +13,81 @@
         <nav>
             <a href="index.html">inicio</a>
         </nav>
-        <section>
-            <article>
-            </article>
-        </section>
+        <form>
+            <fieldset disabled>
+                <legend>DATOS PERSONALES</legend>
+                <label>
+                    Nombre: <input type="text" id="nombre" name="nombre" value="" minlength="6" maxlength="30" required>
+                </label>
+                <br><br>
+                <label for="apellido">Apellido:</label> 
+                <input type="password" id="apellido" name="apellido" value="" placeholder="Apellido" required>
+                <br><br>
+                Fecha Nacimiento: <input type="date" id="fechaNacimiento" name="fechaNacimiento" max="2021-09-29" min="2021-09-01">
+                <br><br>
+                Estado Civil:
+                <select multiple size="3" id="estadoCivil" name="estadoCivil">
+                    <option value="-1" disabled>Seleccione una opción</option>
+                    <option value="ST" selected>Soltero</option>
+                    <option value="CS">Casado</option>
+                    <option value="UL">Unión Libre</option>
+                </select>
+            </fieldset>
+            <br><br>
+            Descripción:
+            <textarea id="descripcion" name="descripcion" value="" cols="30" rows="10">
+                VALOR INICIAL
+            </textarea>
+            <br><br>
+            <fieldset>
+                <legend>Hobbies:</legend>
+                <br>
+                <label>
+                    Fútbol: <input type="checkbox" id="futbol" name="futbol" value="1" checked>
+                </label>
+                <br>
+                <label>
+                    Tenis: <input type="checkbox" id="tenis" name="tenis" value="2">
+                </label>
+            
+                <br>
+                <label>
+                    Natación: <input type="checkbox" id="natacion" name="natacion" value="3">
+                </label>
+            </fieldset>
+            <br><br><br>
+            <fieldset>
+                <legend>Color Favorito:</legend>
+                
+                Azul: <input type="radio" id="radioAzul" name="color" value="1">
+                
+                Amarillo: <input type="radio" id="radioAmarillo" name="color" value="2" checked>
+                
+                Rojo: <input type="radio" id="radioRojo" name="color" value="3">
+                
+            </fieldset>
+            <!--
+                button ->
+                sumbit ->
+                reset ->
+            -->
+            <br>
+            Edad: <input type="number" id="edad" name="edad" max="50" min="15" step="5">
+            <br>
+            Rango: <input type="range" id="rango" name="rango" min="0" max="10" step="2">
+            <br>
+            <input type="submit" id="btnEnviar" name="btnEnviar" value="Guardar">
+            <br>
+            <input type="reset" value="Limpiar">
+            <!--
+                    AZUL
+                    AMARILLO
+                X    ROJO
+                    VERDE
+                    NARANJA
+                    MORADO
+            -->
+
+        </form>
     </body>
 </html>
