@@ -70,3 +70,10 @@ img:hover{
     CLASES .
     ID #
 */
+
+div {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
