@@ -1,0 +1,12 @@
+body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: yellow;
+    box-sizing: border-box;
+}
+
+#btnEnviar:hover{
+    color: greenyellow;
+    background-color: grey;
+}

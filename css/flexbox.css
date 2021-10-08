@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.div-main{
+    display: flex;
+    background-color: silver;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: space-around;
+}
+
+.item-uno,
+.item-dos,
+.item-tres,
+.item-cuatro,
+.item-cinco,
+.item-seis{
+    flex-basis: 25%;
+    background-color: skyblue;
+    margin: 5px 5px;
+}
+
+.item-dos{
+    padding: 20px 0;
+    order: -1;
+    flex-grow: 3;
+}
+
+.item-uno{
+    flex-grow: 1;
+}
+
+.item-tres{
+    flex-shrink: 3;
+    align-self: stretch;
+}
+
+.item-cinco{
+    order: 2;
+}
