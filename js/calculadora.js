@@ -22,6 +22,9 @@ function iniciarEventos(){
         listaBotonesOperaciones[i].addEventListener("click", realizarOperacion);
     }
 
+    
+    document.body.addEventListener("keypress", escribirNumeroTeclado);
+
 }
 
 function escribirNumero(event){
@@ -39,7 +42,7 @@ function realizarOperacion(event){
         // ACCIÓN -> CASE.
         switch(operacion){
             case "+":
-               resultado = parseFloat(operandoUno) + parseFloat(operandoDos);
+               resultado = sumar(operandoUno, operandoDos);
             break;
 
             case "-":
@@ -66,5 +69,21 @@ function realizarOperacion(event){
         operandoUno = document.getElementById("resultado").value;
         document.getElementById("resultado").value = "";
         operacion = operacionActual;
+    }
+}
+
+function sumar(numeroUno, numeroDos){
+    let sumar = parseFloat(numeroUno) + parseFloat(numeroDos);
+    return sumar;
+}
+
+function escribirNumeroTeclado(event){
+    console.log(event)
+    event.preventDefault();
+    if(event.keyCode >= 48 && event.keyCode <= 57){
+        document.getElementById("resultado").value += event.key;  
+    }
+    else if(event.keyCode == 27){
+        document.getElementById("resultado").value = "";
     }
 }
